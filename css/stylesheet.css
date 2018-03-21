@@ -1,0 +1,295 @@
+@font-face {
+    font-family: 'SFUIDisplay';
+    src: url('../fonts/SFUIDisplay-Regular.woff2') format('woff2'),
+    url('../fonts/SFUIDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFUIDisplay';
+    src: url('../fonts/SFUIDisplay-Thin.woff2') format('woff2'),
+    url('../fonts/SFUIDisplay-Thin.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    
+    font-family: 'SFUIDisplay', Tahoma, Arial, Helvetica, sans-serif;
+}
+
+
+#myVideo {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+* html .clearfix {
+    zoom: 1;
+}
+
+
+
+/* IE6 */
+
+*:first-child+html .clearfix {
+    zoom: 1;
+}
+
+
+
+/* IE7 */
+
+.container {
+overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #f1f1f1;
+    height: 100%;
+    width: 100%;
+}
+
+.content {
+    position: relative;
+    margin-right: 8%;
+    margin-left: 8%;
+    height: 100%;
+}
+
+.logo {
+    width: 35%;
+    margin-top: 20px;
+}
+
+
+
+.fb-btn-style {
+    background: url('../images/facebook-logo.png') transparent no-repeat left center;
+    color: rgba(255, 255, 255, .7);
+    border: 1px solid;
+    margin-left: 10px;
+   width: 100%;
+    border: none;
+    margin-top: 20px;
+    display: block;
+    padding-left: 20px;
+    min-height: 25px;
+    overflow: hidden;
+}
+
+.fb-btn-style :hover,
+.fb-btn-style :active,
+.fb-btn-style :focus {
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .fb-btn-style{
+      width: 20px;
+    }
+    .fb-btn-style,
+    .fb-btn-style:hover,
+    .fb-btn-style:active,
+    .fb-btn-style:focus {
+        color: transparent;
+    }
+}
+
+.fb-logo {
+    margin-right: 8px;
+    width: 10%;
+}
+
+
+.youtube-logo {
+width: 120px;
+height: auto;
+margin-top: -5px;
+}
+
+
+.page-detail {
+    text-align: center;
+    margin-top: 8%
+}
+
+h1 {
+    margin-top: 60px;
+    font-size: 100px;
+    font-weight: 300;
+    margin-bottom: 60px;
+}
+
+h1 br {
+    display: none;
+}
+
+p br {
+    display: none;
+}
+
+.message {
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+
+
+.btn-style {
+
+    background: transparent;
+
+
+
+}
+
+.btn-style:hover,
+.btn-style:focus,
+.btn-style.focus {
+    background-color: rgba(255, 255, 255, .2);
+}
+
+span {
+    margin-top: 20px;
+    font-size: 60px;
+    font-weight: 300;
+    color: #fff;
+    margin-right: 3px;
+    margin-bottom: 50px;
+    padding: 2.1vw 2.1vw;
+    display: inline-block;
+    width: 10vw;
+    border-right: 2px solid rgba(255, 255, 255, .2);
+    line-height: 25px;
+}
+
+span:nth-of-type(4) {
+    border: none;
+}
+
+span:after {
+    content: '';
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: block;
+    margin: 12px -22px -1px;
+    opacity: .8;
+    text-align: center;
+}
+
+span:nth-of-type(1):after {
+    content: "Days";
+}
+
+span:nth-of-type(2):after {
+    content: "Hours";
+}
+
+span:nth-of-type(3):after {
+    content: "Minutes";
+}
+
+span:nth-of-type(4):after {
+    content: "Seconds";
+}
+
+
+
+
+.copyright {
+    font-size: 13px;
+    font-weight: normal;
+}
+.footer{
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+
+    .counter span {
+        display: block;
+        float: left;
+        width: 48%;
+        border: none;
+        height: 35px;
+    }
+
+
+    a:link:nth-last-child(1) {
+        color: rgba(255, 255, 255, 0);
+    }
+    .container {
+        overflow: scroll;
+         overflow-x: hidden;
+    }
+    .content {
+
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+    .logo {
+        width: 60%;
+        margin-top: 25px;
+    }
+
+   .youtube-logo {
+width: 100px;
+height: auto;
+
+
+}
+    .page-detail {
+        margin-top: 8%;
+    }
+
+   h1 {
+    margin-top: 40px;
+    font-size: 60px;
+    font-weight: 300;
+    margin-bottom: 60px;
+}
+
+    p br {
+        display: block;
+    }
+
+    .copyright {
+        font-size: 13px;
+        margin-top: 10vh;
+        font-weight: normal;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+  h1 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+}

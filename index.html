@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="925IUcRMW-Wzdrjn3kfSzQc6MEF45VAyS7Qtm-u0KNQ" />
+    <link rel="canonical" href="http://bongobd.com/">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
+    <title>Bongo Coming Soon</title>
+    <!-- Google Analytics: change UA-59847349-12 to be your site's ID -->
+<script async src="//"></script>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-6046132185582448",
+        enable_page_level_ads: true
+    });
+</script>
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-59847349-12', 'auto');
+    ga('send', 'pageview');
+</script>  
+</head>
+
+<body onload="myNewSrc()">
+    <div id="section-title">
+        <video preload="auto" onended="myAddListener()" autoplay id="myVideo">
+            <source src="" type="video/mp4">
+        </video>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-4  col-md-4"> <img class="logo img-responsive" src="images/bongo.png" alt="Bongo Logo"></div>
+                        <div class="col-xs-2 col-xs-offset-6 col-sm-2 col-sm-offset-6 col-md-2 col-md-offset-6  facebook-btn">
+                            <div>
+                               <a href="https://www.facebook.com/watch.bongo/" class="btn fb-btn-style" target="_blank" >Follow us on Facebook</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 page-detail">
+                        <h1>Coming Soon</h1>
+                    
+                        <div>
+                            <p class="message"> Until then enjoy our content on
+                                <br>
+                                     <button type="button" class=" btn btn-style"><a href="https://www.youtube.com/user/bongobd" target="_blank" > <img class="youtube-logo img-responsive" src="images/youtube-logo.svg" alt="Youtube Logo"></a></button>
+                            </p>
+                        </div>
+
+
+
+  <div>
+                            <p class="message"> Or watch live TV on
+                                <br>
+                                     <button type="button" class=" btn btn-style"><a href="http://www.bioscopelive.com/" target="_blank" > <img class="youtube-logo img-responsive" src="images/bioscope-logo.svg" alt="Bioscope Logo"></a></button>
+                            </p>
+                        </div>
+
+                        
+                        
+                    </div>
+                </div>
+            </div>
+           <div class="footer">
+                            <p class="copyright">&copy; 2018 BongoBD. All rights reserved.</p>
+                        </div>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript">
+    var videoSources = ["https://vod.bioscopelive.com/vod/vod/w/e/web/web_360p.mp4"];
+
+
+    var currentIndex = 0;
+    // listener function changes src
+    function myNewSrc() {
+        var myVideo = document.getElementsByTagName('video')[0];
+        myVideo.src = videoSources[currentIndex];
+        myVideo.load();
+    }
+
+
+    // add a listener function to the ended event
+    function myAddListener() {
+        var myVideo = document.getElementsByTagName('video')[0];
+        currentIndex = (currentIndex + 1) % videoSources.length;
+        myVideo.src = videoSources[currentIndex];
+        myVideo.addEventListener('ended', myNewSrc, false);
+
+    }
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
